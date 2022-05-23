@@ -1,7 +1,7 @@
 #!/bin/bash
 
 CDKVER="2.12.0"
-PREFIX="xxxxxx"
+PREFIX="taketosk"
 
 npm install --force -g aws-cdk@$CDKVER
 
