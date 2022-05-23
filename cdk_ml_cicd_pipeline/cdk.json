@@ -1,0 +1,24 @@
+{
+  "app": "python3 app.py",
+  "context": {
+    "@aws-cdk/aws-rds:lowercaseDbIdentifier": true,
+    "@aws-cdk/aws-cloudfront:defaultSecurityPolicyTLSv1.2_2021": true,
+    "@aws-cdk/aws-apigateway:usagePlanKeyOrderInsensitiveId": true,
+    "@aws-cdk/core:stackRelativeExports": true,
+
+    "prefix": "dev",
+    "account": "140499885936",
+    "region": "us-east-1",
+    "train": {
+      "connection": "arn:aws:codestar-connections:us-east-1:222136011322:connection/4535bfad-7f54-40c1-a726-12ba33005c45",
+      "repo": "aws-ml-cicd-pipeline-training-repo",
+      "owner": "tkazusa",
+      "branch": "main",
+      "vpc":{
+        "cidr": "10.0.0.0/16"
+      },
+      "slack_hook_url": "https://hooks.slack.com/services/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",
+      "stepfunctions_name": "sfn_train"
+    }
+  }
+}
